@@ -4,7 +4,7 @@ Sample of running GDAL on .NET Core
 
 ## Running
 
-``
+```
 $ git clone https://github.com/bertt/GdalOnNetCoreSample.git
 $ cd GdalOnNetCoreSample
 $ dotnet build
