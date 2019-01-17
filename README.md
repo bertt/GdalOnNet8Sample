@@ -48,14 +48,22 @@ To
  <PackageReference Include="Gdal.Core.LinuxRuntime" Version="2.3.0-beta-023" />
 ```
 
-Running gives an error:
+Install GDAL and libproj:
+
+```
+$ sudo apt-get install gdal-bin
+$ sudo apt-get install libproj-dev
+```
 
 ```
 $ dotnet build
 $ dotnet run
-Unhandled Exception: System.ApplicationException: libproj.so: cannot open shared object file: No such file or directory
-   at OSGeo.OSR.SpatialReference.ImportFromProj4(String ppszInput)
-   at GdalNetCore.Program.Main(String[] args) in /mnt/d/dev/github.com/bertt/GdalOnNetCoreSample/Program.cs:line 15
+
+SOURCE IsGeographic:1 IsProjected:0
+DEST IsGeographic:0 IsProjected:1
+x:646305.79995079 y:183948.498850677 z:0
+x:661409.396274113 y:239546.729789271 z:0
+
 ```
 
 
