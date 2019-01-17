@@ -48,7 +48,7 @@ To
  <PackageReference Include="Gdal.Core.LinuxRuntime" Version="2.3.0-beta-023" />
 ```
 
-Running gives and error:
+Running gives an error:
 
 ```
 $ dotnet build
