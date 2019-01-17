@@ -34,7 +34,9 @@ There is another package for running on Linux:
 
 ## Running on Linux
 
-Trying to get this running on Linux. Changed GDalNetCore.csproj:
+To get this running on Linux do the following. 
+
+### Change GDalNetCore.csproj:
 
 From
 
@@ -48,12 +50,14 @@ To
  <PackageReference Include="Gdal.Core.LinuxRuntime" Version="2.3.0-beta-023" />
 ```
 
-Install GDAL and libproj:
+### Install GDAL and libproj:
 
 ```
 $ sudo apt-get install gdal-bin
 $ sudo apt-get install libproj-dev
 ```
+
+### Run
 
 ```
 $ dotnet build
