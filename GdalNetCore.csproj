@@ -10,4 +10,10 @@
     <PackageReference Include="Gdal.Core.WindowsRuntime" Version="2.3.0-beta-023" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="gemeenten2016.geojson">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
