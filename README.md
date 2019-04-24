@@ -11,6 +11,13 @@ $ dotnet build
 $ dotnet run
 ```
 
+## Docker
+
+$ docker build -t gdalnetcore .
+
+$ docker run -it gdalnetcore
+
+
 Output:
 
 ```
