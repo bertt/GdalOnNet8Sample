@@ -2,7 +2,6 @@
 using OSGeo.OGR;
 using OSGeo.OSR;
 using System;
-
 namespace GdalNetCore
 {
     class Program
@@ -36,6 +35,7 @@ namespace GdalNetCore
             Console.WriteLine("x:" + p[0] + " y:" + p[1] + " z:" + p[2]);
             ct.TransformPoint(p, 19.2, 47.5, 0);
             Console.WriteLine("x:" + p[0] + " y:" + p[1] + " z:" + p[2]);
+            Console.WriteLine("Program finished, press any key to exit.");
             Console.ReadKey();
         }
     }

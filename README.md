@@ -1,6 +1,10 @@
 # GdalOnNetCoreSample
 
-Sample of running GDAL on .NET Core
+Sample of running GDAL on .NET Core.
+
+Update 2019-04-25:
+
+To get the sample running on a standard .NET Core Docker image an update version of Gdal.Core.LinuxRuntime (2.3.0-beta-024-1840) on myget.org is used instead of the one from NuGet.
 
 ## Running
 
@@ -37,7 +41,9 @@ This sample uses the following packages:
 
 There is another package for running on Linux:
 
-- https://www.nuget.org/packages/Gdal.Core.LinuxRuntime/2.3.0-beta-023
+- ~https://www.nuget.org/packages/Gdal.Core.LinuxRuntime/2.3.0-beta-023~
+
+- Gdal.Core.LinuxRuntime 2.3.0-beta-024-1840 on myget.org
 
 ## Running on Linux
 
