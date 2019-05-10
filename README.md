@@ -58,11 +58,12 @@ From
 ```
  <PackageReference Include="Gdal.Core.WindowsRuntime" Version="2.3.0-beta-023" />
 ```
- 
-To
+
+To (from myget)
 
 ```
- <PackageReference Include="Gdal.Core.LinuxRuntime" Version="2.3.0-beta-023" />
+<PackageReference Include="Gdal.Core" Version="2.3.0-beta-024-1801" />
+<PackageReference Include="Gdal.Core.LinuxRuntime" Version="2.3.0-beta-024-1840" />
 ```
 
 ### Install GDAL and libproj:
