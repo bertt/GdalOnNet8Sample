@@ -45,6 +45,8 @@ There is another package for running on Linux:
 
 - Gdal.Core.LinuxRuntime 2.3.0-beta-024-1840 on myget.org
 
+https://www.myget.org/feed/gdalcore/package/nuget/Gdal.Core.LinuxRuntime
+
 ## Running on Linux
 
 To get this running on Linux do the following. 
