@@ -2,6 +2,12 @@
 
 Sample of running GDAL on .NET Core. Works on Linux and Windows (not Mac).
 
+Sample contains 2 parts:
+
+- Read GeoJSON file
+
+- Transform coordinate from espg:28992 to epsg:4326
+
 ## Running
 
 ```
@@ -16,15 +22,6 @@ $ dotnet run
 ```
 $ docker build -t gdalnetcore .
 $ docker run -it gdalnetcore
-```
-
-Output:
-
-```
-SOURCE IsGeographic:1 IsProjected:0
-DEST IsGeographic:0 IsProjected:1
-x:646305.79995079 y:183948.498850677 z:0
-x:661409.396274113 y:239546.729789271 z:0
 ```
 
 ## Dependencies
@@ -44,7 +41,7 @@ And the following packages from MyGet on Linux:
 
 In the csproj file there is a conditional packagereference depending on OS (Windows or Unix). NB: This program does not work on Mac.
 
-### Dependiencies on Linux: gdal-bin and libproj-dev:
+### Dependencies on Linux: gdal-bin and libproj-dev:
 
 To run on Linux system the dependencies gdal-bin and libproj-dev must be installed. See also the Dockerfile for sample.
 
