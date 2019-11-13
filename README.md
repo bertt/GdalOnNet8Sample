@@ -44,7 +44,7 @@ And the following packages from MyGet on Linux:
 
 In the csproj file there is a conditional packagereference depending on OS (Windows or Unix). NB: This program does not work on Mac.
 
-### Dependiencies on Linux: gdal-bin and libproj-dev:
+### Dependencies on Linux: gdal-bin and libproj-dev
 
 To run on Linux system the dependencies gdal-bin and libproj-dev must be installed. See also the Dockerfile for sample.
 
