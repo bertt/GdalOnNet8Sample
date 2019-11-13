@@ -33,40 +33,24 @@ x:661409.396274113 y:239546.729789271 z:0
 
 ## Dependencies
 
-This sample uses the following packages:
+This sample uses the following packages on Windows:
 
 - https://www.nuget.org/packages/Gdal.Core/2.3.0-beta-023
 
 - https://www.nuget.org/packages/Gdal.Core.WindowsRuntime/2.3.0-beta-023 
 
-There is another package for running on Linux:
+And the following packages on Linux:
 
-- ~https://www.nuget.org/packages/Gdal.Core.LinuxRuntime/2.3.0-beta-023~
+- https://www.myget.org/feed/gdalcore/package/nuget/Gdal.Core (Gdal.Core 2.3.0-beta-024-1801)
 
-- Gdal.Core.LinuxRuntime 2.3.0-beta-024-1840 on myget.org
+- https://www.myget.org/feed/gdalcore/package/nuget/Gdal.Core.LinuxRuntime (Gdal.Core.LinuxRuntime 2.3.0-beta-024-1840)
 
-https://www.myget.org/feed/gdalcore/package/nuget/Gdal.Core.LinuxRuntime
 
-## Running on Linux
-
-To get this running on Linux do the following. 
-
-### Change GDalNetCore.csproj:
-
-From
-
-```
- <PackageReference Include="Gdal.Core.WindowsRuntime" Version="2.3.0-beta-023" />
-```
-
-To (from myget)
-
-```
-<PackageReference Include="Gdal.Core" Version="2.3.0-beta-024-1801" />
-<PackageReference Include="Gdal.Core.LinuxRuntime" Version="2.3.0-beta-024-1840" />
-```
+In the csproj file there is a conditional packagereference depending on OS (Windows or Unix). NB: This program does not work on Mac.
 
 ### Install GDAL and libproj:
+
+To run on Linux system the dependencies gdal-bin and libproj-dev must be installed. See also the Dockerfile
 
 ```
 $ sudo apt-get install gdal-bin
@@ -85,5 +69,3 @@ x:646305.79995079 y:183948.498850677 z:0
 x:661409.396274113 y:239546.729789271 z:0
 
 ```
-
-
