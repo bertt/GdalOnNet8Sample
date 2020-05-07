@@ -8,15 +8,18 @@
 
   <ItemGroup Condition="'$(OS)' == 'Unix'">
     <PackageReference Include="Gdal.Core" Version="2.3.0-beta-024-1801" />
-    <PackageReference Include="Gdal.Core.LinuxRuntime" Version="2.3.0-beta-024-1840"/>
+    <PackageReference Include="Gdal.Core.LinuxRuntime" Version="2.3.0-beta-024-1840" />
   </ItemGroup>
   <ItemGroup Condition="'$(OS)' != 'Unix'">
-      <PackageReference Include="Gdal.Core" Version="2.3.0-beta-023"/>
-      <PackageReference Include="Gdal.Core.WindowsRuntime" Version="2.3.0-beta-023"/>
+      <PackageReference Include="Gdal.Core" Version="2.3.0-beta-023" />
+      <PackageReference Include="Gdal.Core.WindowsRuntime" Version="2.3.0-beta-023" />
   </ItemGroup>
 
   <ItemGroup>
     <None Update="gemeenten2016.geojson">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="LoD2_280_5657_1_NW.gml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>

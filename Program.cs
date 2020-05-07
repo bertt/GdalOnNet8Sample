@@ -2,6 +2,8 @@
 using OSGeo.OGR;
 using OSGeo.OSR;
 using System;
+using System.Collections.Generic;
+
 namespace GdalNetCore
 {
     class Program
@@ -10,6 +12,27 @@ namespace GdalNetCore
         {
             Gdal.AllRegister();
             Ogr.RegisterAll();
+
+            // print OGR drivers
+            var res = new List<string>();
+            for(var i = 0; i < Ogr.GetDriverCount(); i++)
+            {
+                res.Add(Ogr.GetDriver(i).GetName());
+            }
+            Console.WriteLine("Drivers: " + string.Join(',', res));
+
+            // sample reading citygml file
+            var gmlDriver = Ogr.GetDriverByName("GML");
+            var dsGml = gmlDriver.Open(@"LoD2_280_5657_1_NW.gml", 0);
+            var buildingLayer = dsGml.GetLayerByName("building");
+            var featuresGml = buildingLayer.GetFeatureCount(0);
+            for(var f = 0; f < featuresGml; f++)
+            {
+                var featureGml = buildingLayer.GetFeature(f);
+                // todo: read geometry...
+            }
+
+
 
             // sample read geojson file
             var geojsonDriver = Ogr.GetDriverByName("GeoJSON");
