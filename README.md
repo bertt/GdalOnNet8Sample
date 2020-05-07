@@ -8,6 +8,8 @@ Sample contains 2 parts:
 
 - Transform coordinate from espg:28992 to epsg:4326
 
+OGR drivers in this release:  PCIDSK,PDF,DB2ODBC,ESRI Shapefile,MapInfo File,UK .NTF,OGR_SDTS,S57,DGN,OGR_VRT,REC,Memory,BNA,CSV,GML,GPX,LIBKML,KML,GeoJSON,OGR_GMT,GPKG,SQLite,ODBC,WAsP,PGeo,MSSQLSpatial,OpenFileGDB,XPlane,DXF,CAD,Geoconcept,GeoRSS,GPSTrackMaker,VFK,PGDUMP,OSM,GPSBabel,SUA,OpenAir,OGR_PDS,HTF,AeronavFAA,Geomedia,EDIGEO,SVG,Idrisi,ARCGEN,SEGUKOOA,SEGY,ODS,XLSX,Walk,SXF,Selafin,JML,VDV,TIGER,AVCBin,AVCE00
+
 ## Running
 
 ```
