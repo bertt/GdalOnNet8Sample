@@ -3,6 +3,7 @@ using OSGeo.OGR;
 using OSGeo.OSR;
 using System;
 using System.Collections.Generic;
+using Wkx;
 
 namespace GdalNetCore
 {
@@ -21,18 +22,22 @@ namespace GdalNetCore
             }
             Console.WriteLine("Drivers: " + string.Join(',', res));
 
-            // sample reading citygml file
+            // sample reading (city)gml file
             var gmlDriver = Ogr.GetDriverByName("GML");
             var dsGml = gmlDriver.Open(@"LoD2_280_5657_1_NW.gml", 0);
             var buildingLayer = dsGml.GetLayerByName("building");
             var featuresGml = buildingLayer.GetFeatureCount(0);
+            Console.WriteLine($"Number of features: {featuresGml}");
             for(var f = 0; f < featuresGml; f++)
             {
-                var featureGml = buildingLayer.GetFeature(f);
-                // todo: read geometry...
+                var featureGml = buildingLayer.GetNextFeature();
+                var geometry = featureGml.GetGeometryRef();
+                // serialize to wkt... when using wkb there is an error :-(
+                var wkt = string.Empty;
+                geometry.ExportToWkt(out wkt);
+                var geom = Wkx.Geometry.Deserialize<WktSerializer>(wkt);
+                Console.WriteLine(geom.GeometryType + ", " + ((MultiLineString)geom).Geometries.Count); // result is multilinestring...
             }
-
-
 
             // sample read geojson file
             var geojsonDriver = Ogr.GetDriverByName("GeoJSON");
