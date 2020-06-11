@@ -1,4 +1,4 @@
-# GdalOnNetCoreSample
+# GDAL on .NET Core Sample
 
 Sample of running GDAL on .NET Core. Works on Linux and Windows (not Mac).
 
@@ -40,8 +40,28 @@ And the following packages from MyGet on Linux:
 
 - https://www.myget.org/feed/gdalcore/package/nuget/Gdal.Core.LinuxRuntime (Gdal.Core.LinuxRuntime 2.3.0-beta-024-1840)
 
+To use both NuGet and MyGet use 'RestoreSources' in csproj:
 
-In the csproj file there is a conditional packagereference depending on OS (Windows or Unix). NB: This program does not work on Mac.
+```
+   <RestoreSources>
+    $(RestoreSources);https://api.nuget.org/v3/index.json;https://www.myget.org/F/gdalcore/api/v3/index.json
+   </RestoreSource>
+```
+
+In the csproj file there is a conditional packagereference depending on OS (Windows or Unix):
+
+```
+ <ItemGroup Condition="'$(OS)' == 'Unix'">
+    <PackageReference Include="Gdal.Core" Version="2.3.0-beta-024-1801" />
+    <PackageReference Include="Gdal.Core.LinuxRuntime" Version="2.3.0-beta-024-1840" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(OS)' != 'Unix'">
+      <PackageReference Include="Gdal.Core" Version="2.3.0-beta-023" />
+      <PackageReference Include="Gdal.Core.WindowsRuntime" Version="2.3.0-beta-023" />
+  ```
+
+
+NB: This program does not work on Mac.
 
 ### Dependencies on Linux: gdal-bin and libproj-dev:
 
