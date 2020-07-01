@@ -63,6 +63,17 @@ In the csproj file there is a conditional packagereference depending on OS (Wind
 
 NB: This program does not work on Mac.
 
+###
+
+To perform projections there is a dependency to environment varaibale 'GDAL_DATA'. It should point to a directory
+containing gcs.csv file.
+
+Error message when this dependency is missing:
+
+```
+ERROR 4: Unable to open EPSG support file gcs.csv.  Try setting the GDAL_DATA environment variable to point to the directory containing EPSG csv files.
+```
+
 ### Dependencies on Linux: gdal-bin and libproj-dev:
 
 To run on Linux system the dependencies gdal-bin and libproj-dev must be installed. See also the Dockerfile for sample.
