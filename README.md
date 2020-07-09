@@ -4,7 +4,7 @@ Sample of running GDAL 2.3 on .NET Core 3.1. Works on Linux and Windows (not Mac
 
 Sample contains 2 parts:
 
-- Read GeoJSON file
+- Read Gml file
 
 - Transform coordinate from espg:28992 to epsg:4326
 
