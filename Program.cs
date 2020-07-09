@@ -65,7 +65,7 @@ namespace GdalNetCore
             Console.WriteLine("From: x:" + p[0] + " y:" + p[1] + " z:" + p[2]);
             ct.TransformPoint(p);
             Console.WriteLine("To: x:" + p[0] + " y:" + p[1] + " z:" + p[2]);
-            Console.WriteLine("Program finished, press any key to exit.");
+            Console.WriteLine("Program finished.");
             // Console.ReadKey();
         }
     }
