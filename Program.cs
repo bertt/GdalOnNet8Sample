@@ -14,6 +14,11 @@ namespace GdalNetCore
             Gdal.AllRegister();
             Ogr.RegisterAll();
 
+            Console.WriteLine(Gdal.VersionInfo("RELEASE_NAME"));
+            Console.WriteLine(Gdal.VersionInfo("VERSION_NUM"));
+            Console.WriteLine(Gdal.VersionInfo("BUILD_INFO"));
+
+
             // print OGR drivers
             var res = new List<string>();
             for(var i = 0; i < Ogr.GetDriverCount(); i++)
@@ -37,7 +42,7 @@ namespace GdalNetCore
                 var wkt = string.Empty;
                 geometry.ExportToWkt(out wkt);
                 var geom = Wkx.Geometry.Deserialize<WktSerializer>(wkt);
-                Console.WriteLine(geom.GeometryType + ", " + ((MultiLineString)geom).Geometries.Count); // result is multilinestring...
+                // Console.WriteLine(geom.GeometryType + ", " + ((MultiLineString)geom).Geometries.Count); // result is multilinestring...
             }
 
             // sample read geojson file
@@ -61,7 +66,7 @@ namespace GdalNetCore
             ct.TransformPoint(p);
             Console.WriteLine("To: x:" + p[0] + " y:" + p[1] + " z:" + p[2]);
             Console.WriteLine("Program finished, press any key to exit.");
-            Console.ReadKey();
+            // Console.ReadKey();
         }
     }
 }
