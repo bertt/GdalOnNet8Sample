@@ -3,7 +3,7 @@ WORKDIR /src
 COPY . .
 RUN dotnet build "GdalNetCore.csproj" -c Release
 RUN dotnet publish "GdalNetCore.csproj" -c Release -o /app
-RUN apt-get update && apt-get install -y gdal-bin && apt-get install libproj-dev
-ENV GDAL_DATA=/usr/share/gdal/2.1/
+RUN apt-get update && apt-get install gdal-bin -y && apt-get install libproj-dev -y
+ENV GDAL_DATA=/usr/share/gdal
 WORKDIR /app
 ENTRYPOINT ["dotnet", "GdalNetCore.dll"]
