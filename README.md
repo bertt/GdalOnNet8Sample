@@ -1,6 +1,6 @@
 # GDAL on .NET Core Sample
 
-Sample of running GDAL on .NET Core. Works on Linux and Windows (not Mac).
+Sample of running GDAL 2.4 on .NET Core 3.1. Works on Linux and Windows (not Mac).
 
 Sample contains 2 parts:
 
@@ -8,7 +8,8 @@ Sample contains 2 parts:
 
 - Transform coordinate from espg:28992 to epsg:4326
 
-OGR drivers in this release:  PCIDSK,PDF,DB2ODBC,ESRI Shapefile,MapInfo File,UK .NTF,OGR_SDTS,S57,DGN,OGR_VRT,REC,Memory,BNA,CSV,GML,GPX,LIBKML,KML,GeoJSON,OGR_GMT,GPKG,SQLite,ODBC,WAsP,PGeo,MSSQLSpatial,OpenFileGDB,XPlane,DXF,CAD,Geoconcept,GeoRSS,GPSTrackMaker,VFK,PGDUMP,OSM,GPSBabel,SUA,OpenAir,OGR_PDS,HTF,AeronavFAA,Geomedia,EDIGEO,SVG,Idrisi,ARCGEN,SEGUKOOA,SEGY,ODS,XLSX,Walk,SXF,Selafin,JML,VDV,TIGER,AVCBin,AVCE00
+OGR drivers in this release: PCIDSK,netCDF,PDF,ESRI Shapefile,MapInfo File,UK .NTF,OGR_SDTS,S57,DGN,OGR_VRT,REC,Memory,BNA,CSV,GML,GPX,LIBKML,KML,GeoJSON,OGR_GMT,GPKG,SQLite,WAsP,OpenFileGDB,XPlane,DXF,CAD,Geoconcept,GeoRSS,GPSTrackMaker,VFK,PGDUMP,OSM,GPSBabel,SUA,OpenAir,OGR_PDS,WFS,HTF,AeronavFAA,EDIGEO,GFT,SVG,CouchDB,Cloudant,Idrisi,ARCGEN,SEGUKOOA,SEGY,XLS,ODS,XLSX,ElasticSearch,Carto,AmigoCloud,SXF,Selafin,JML,PLSCENES,CSW,VDV,TIGER,AVCBin,AVCE00,HTTP
+
 
 ## Running
 

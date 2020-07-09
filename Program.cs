@@ -21,6 +21,7 @@ namespace GdalNetCore
                 res.Add(Ogr.GetDriver(i).GetName());
             }
             Console.WriteLine("Drivers: " + string.Join(',', res));
+            Console.WriteLine("Number of drivers: " + Ogr.GetDriverCount());
 
             // sample reading (city)gml file
             var gmlDriver = Ogr.GetDriverByName("GML");
