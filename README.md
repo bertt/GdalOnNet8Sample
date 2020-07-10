@@ -12,17 +12,21 @@ Sample contains 2 parts:
 
 Windows:
 
+```
 Releasename: 2.3.0dev
 Versionnumber: 2030000
 Number of drivers: 59
 Drivers: PCIDSK,PDF,DB2ODBC,ESRI Shapefile,MapInfo File,UK .NTF,OGR_SDTS,S57,DGN,OGR_VRT,REC,Memory,BNA,CSV,GML,GPX,LIBKML,KML,GeoJSON,OGR_GMT,GPKG,SQLite,ODBC,WAsP,PGeo,MSSQLSpatial,OpenFileGDB,XPlane,DXF,CAD,Geoconcept,GeoRSS,GPSTrackMaker,VFK,PGDUMP,OSM,GPSBabel,SUA,OpenAir,OGR_PDS,HTF,AeronavFAA,Geomedia,EDIGEO,SVG,Idrisi,ARCGEN,SEGUKOOA,SEGY,ODS,XLSX,Walk,SXF,Selafin,JML,VDV,TIGER,AVCBin,AVCE00
+```
 
 Linux:
 
+```
 Releasename: 2.3.0dev
 Versionnumber: 2030000
 Number of drivers: 65
 Drivers in this release: PCIDSK,netCDF,PDF,ESRI Shapefile,MapInfo File,UK .NTF,OGR_SDTS,S57,DGN,OGR_VRT,REC,Memory,BNA,CSV,GML,GPX,LIBKML,KML,GeoJSON,OGR_GMT,GPKG,SQLite,WAsP,OpenFileGDB,XPlane,DXF,CAD,Geoconcept,GeoRSS,GPSTrackMaker,VFK,PGDUMP,OSM,GPSBabel,SUA,OpenAir,OGR_PDS,WFS,HTF,AeronavFAA,EDIGEO,GFT,SVG,CouchDB,Cloudant,Idrisi,ARCGEN,SEGUKOOA,SEGY,XLS,ODS,XLSX,ElasticSearch,Carto,AmigoCloud,SXF,Selafin,JML,PLSCENES,CSW,VDV,TIGER,AVCBin,AVCE00,HTTP
+```
 
 ## Running
 
