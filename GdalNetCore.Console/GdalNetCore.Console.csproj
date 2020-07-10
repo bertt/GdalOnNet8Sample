@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+	  <RestoreSources>$(RestoreSources);https://api.nuget.org/v3/index.json;https://www.myget.org/F/gdalcore/api/v3/index.json</RestoreSources>
+  </PropertyGroup>
+
+  <ItemGroup Condition="'$(OS)' == 'Unix'">
+    <PackageReference Include="Gdal.Core" Version="2.3.0-beta-024-1801" />
+    <PackageReference Include="Gdal.Core.LinuxRuntime" Version="2.3.0-beta-024-1840" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(OS)' != 'Unix'">
+      <PackageReference Include="Gdal.Core" Version="2.3.0-beta-023" />
+      <PackageReference Include="Gdal.Core.WindowsRuntime" Version="2.3.0-beta-023" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Wkx" Version="0.5.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="gemeenten2016.geojson">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="LoD2_280_5657_1_NW.gml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
