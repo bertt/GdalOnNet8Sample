@@ -7,7 +7,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GdalNetCore.Console", "Gdal
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GdalNetCore.Web", "GdalNetCore.Web\GdalNetCore.Web.csproj", "{262ED667-C2C9-46AF-93FF-3972D19CCB4B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GdalNetCore.Core", "GdalNetCore.Core\GdalNetCore.Core.csproj", "{3949A973-71DD-47AF-9272-673B7908D2C0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GdalNetCore.Core", "GdalNetCore.Core\GdalNetCore.Core.csproj", "{3949A973-71DD-47AF-9272-673B7908D2C0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{04B75AF2-AC4A-4449-B9DE-51DAFE7836D4}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
