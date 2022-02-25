@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using OSGeo.GDAL;
 using OSGeo.OGR;
-using OSGeo.OSR;
 
 namespace GdalNetCore.Core
 {

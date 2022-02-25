@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+	  <PackageReference Include="MaxRev.Gdal.WindowsRuntime.Minimal" Version="3.3.3.110" />
+	  <PackageReference Include="MaxRev.Gdal.LinuxRuntime.Minimal" Version="3.3.3.110" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Gdal.Core\Gdal.Core.csproj" />
+  </ItemGroup>
+
+</Project>
