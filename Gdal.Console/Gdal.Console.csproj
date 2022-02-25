@@ -3,14 +3,19 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net6.0</TargetFramework>
+	  <IsWindows Condition="'$([System.Runtime.InteropServices.RuntimeInformation]::IsOSPlatform($([System.Runtime.InteropServices.OSPlatform]::Windows)))' == 'true'">true</IsWindows>
+	  <IsLinux Condition="'$([System.Runtime.InteropServices.RuntimeInformation]::IsOSPlatform($([System.Runtime.InteropServices.OSPlatform]::Linux)))' == 'true'">true</IsLinux>
   </PropertyGroup>
 
+  <ItemGroup Condition="'$(IsWindows)'=='true'">
+		<PackageReference Include="MaxRev.Gdal.WindowsRuntime.Minimal" Version="3.3.3.110" />
+	</ItemGroup>
+  <ItemGroup Condition="'$(IsLinux)'=='true'">
+		<PackageReference Include="MaxRev.Gdal.LinuxRuntime.Minimal" Version="3.3.3.110" />
+	</ItemGroup>
   <ItemGroup>
-     <PackageReference Include="MaxRev.Gdal.WindowsRuntime.Minimal" Version="3.3.3.110" />
-     <PackageReference Include="MaxRev.Gdal.LinuxRuntime.Minimal" Version="3.3.3.110" />
-	 <PackageReference Include="Wkx" Version="0.5.1" />
+	<PackageReference Include="Wkx" Version="0.5.1" />
   </ItemGroup>
-
   <ItemGroup>
     <ProjectReference Include="..\Gdal.Core\Gdal.Core.csproj" />
   </ItemGroup>
