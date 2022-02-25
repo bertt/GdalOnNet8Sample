@@ -10,9 +10,16 @@ Sample contains 3 parts:
 
 - Transform coordinate from espg:28992 to epsg:4326
 
-## Gdal info
+## Running
 
-Windows:
+```
+$ git clone https://github.com/bertt/GdalOnNetCoreSample.git
+$ cd GdalOnNetCoreSample
+$ cd Gdal.Console
+$ dotnet run
+```
+
+Result:
 
 ```
 PAM_ENABLED=YES
@@ -24,24 +31,6 @@ Releasename: 3.3.3
 Versionnumber: 3030300
 Number of drivers: 80
 Drivers: ESRIC,PCIDSK,PDS4,VICAR,JP2OpenJPEG,PDF,MBTiles,EEDA,OGCAPI,DB2ODBC,ESRI Shapefile,MapInfo File,UK .NTF,LVBAG,OGR_SDTS,S57,DGN,OGR_VRT,REC,Memory,CSV,NAS,GML,GPX,KML,GeoJSON,GeoJSONSeq,ESRIJSON,TopoJSON,Interlis 1,Interlis 2,OGR_GMT,GPKG,SQLite,ODBC,WAsP,PGeo,MSSQLSpatial,PostgreSQL,OpenFileGDB,DXF,CAD,FlatGeobuf,Geoconcept,GeoRSS,GPSTrackMaker,VFK,PGDUMP,OSM,GPSBabel,OGR_PDS,WFS,OAPIF,Geomedia,EDIGEO,SVG,CouchDB,Cloudant,Idrisi,ARCGEN,ODS,XLSX,Elasticsearch,Walk,Carto,AmigoCloud,SXF,Selafin,JML,PLSCENES,CSW,VDV,GMLAS,MVT,NGW,MapML,TIGER,AVCBin,AVCE00,HTTP
-```
-
-Linux:
-
-```
-Releasename: 2.3.0dev
-Versionnumber: 2030000
-Number of drivers: 65
-Drivers in this release: PCIDSK,netCDF,PDF,ESRI Shapefile,MapInfo File,UK .NTF,OGR_SDTS,S57,DGN,OGR_VRT,REC,Memory,BNA,CSV,GML,GPX,LIBKML,KML,GeoJSON,OGR_GMT,GPKG,SQLite,WAsP,OpenFileGDB,XPlane,DXF,CAD,Geoconcept,GeoRSS,GPSTrackMaker,VFK,PGDUMP,OSM,GPSBabel,SUA,OpenAir,OGR_PDS,WFS,HTF,AeronavFAA,EDIGEO,GFT,SVG,CouchDB,Cloudant,Idrisi,ARCGEN,SEGUKOOA,SEGY,XLS,ODS,XLSX,ElasticSearch,Carto,AmigoCloud,SXF,Selafin,JML,PLSCENES,CSW,VDV,TIGER,AVCBin,AVCE00,HTTP
-```
-
-## Running
-
-```
-$ git clone https://github.com/bertt/GdalOnNetCoreSample.git
-$ cd GdalOnNetCoreSample
-$ cd Gdal.Console
-$ dotnet run
 ```
 
 ## Docker
