@@ -40,36 +40,16 @@ Drivers in this release: PCIDSK,netCDF,PDF,ESRI Shapefile,MapInfo File,UK .NTF,O
 ```
 $ git clone https://github.com/bertt/GdalOnNetCoreSample.git
 $ cd GdalOnNetCoreSample
-```
-
-1] Start Console app 
-
-```
 $ cd Gdal.Console
 $ dotnet run
 ```
 
-2] Start Web app
-
-```
-$ cd Gdal.Web
-$ dotnet run
-```
-
-A webserver starts, in browser go to something like  https://localhost:59537
-
 ## Docker
 
-1] Console 
-
 ```
-$ docker build -t gdal.console -f Dockerfile_console .
+$ docker build -t gdal.console -f Dockerfile .
 $ docker run -it gdal.console
 ```
-
-2] Web
-
-todo
 
 ## Sample code (see program.cs)
 
@@ -125,13 +105,4 @@ Error message when this dependency is missing:
 
 ```
 System.ApplicationException: 'PROJ: proj_get_authorities_from_database: Cannot find proj.db'
-```
-
-### Dependencies on Linux: gdal-bin and libproj-dev:
-
-To run on Linux system the dependencies gdal-bin and libproj-dev must be installed. See also the Dockerfile for sample.
-
-```
-$ sudo apt-get install gdal-bin
-$ sudo apt-get install libproj-dev
 ```

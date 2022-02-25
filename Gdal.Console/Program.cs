@@ -6,7 +6,6 @@ using Wkx;
 
 namespace GdalNetCore
 {
-
     class Program
     {
         static void Main(string[] args)

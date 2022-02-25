@@ -5,14 +5,11 @@ VisualStudioVersion = 17.1.32210.238
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gdal.Console", "Gdal.Console\Gdal.Console.csproj", "{928D20CD-7A4C-4017-BD93-DC847191F375}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gdal.Web", "Gdal.Web\Gdal.Web.csproj", "{262ED667-C2C9-46AF-93FF-3972D19CCB4B}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gdal.Core", "Gdal.Core\Gdal.Core.csproj", "{3949A973-71DD-47AF-9272-673B7908D2C0}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{04B75AF2-AC4A-4449-B9DE-51DAFE7836D4}"
 	ProjectSection(SolutionItems) = preProject
-		Dockerfile_console = Dockerfile_console
-		Dockerfile_web = Dockerfile_web
+		Dockerfile = Dockerfile
 		README.md = README.md
 	EndProjectSection
 EndProject
@@ -26,10 +23,6 @@ Global
 		{928D20CD-7A4C-4017-BD93-DC847191F375}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{928D20CD-7A4C-4017-BD93-DC847191F375}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{928D20CD-7A4C-4017-BD93-DC847191F375}.Release|Any CPU.Build.0 = Release|Any CPU
-		{262ED667-C2C9-46AF-93FF-3972D19CCB4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{262ED667-C2C9-46AF-93FF-3972D19CCB4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{262ED667-C2C9-46AF-93FF-3972D19CCB4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{262ED667-C2C9-46AF-93FF-3972D19CCB4B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{3949A973-71DD-47AF-9272-673B7908D2C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{3949A973-71DD-47AF-9272-673B7908D2C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3949A973-71DD-47AF-9272-673B7908D2C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
