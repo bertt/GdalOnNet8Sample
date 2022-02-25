@@ -123,6 +123,10 @@ Error message when this dependency is missing:
 ERROR 4: Unable to open EPSG support file gcs.csv.  Try setting the GDAL_DATA environment variable to point to the directory containing EPSG csv files.
 ```
 
+Path for ArcMap 10.3:
+
+C:\Program Files (x86)\ArcGIS\Desktop10.3\pedata\gdaldata
+
 ### Dependencies on Linux: gdal-bin and libproj-dev:
 
 To run on Linux system the dependencies gdal-bin and libproj-dev must be installed. See also the Dockerfile for sample.
