@@ -1,5 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using MaxRev.Gdal.Core;
 using OSGeo.GDAL;
 using OSGeo.OGR;
 
@@ -9,8 +9,7 @@ namespace GdalNetCore.Core
     {
         public GdalKit()
         {
-            Gdal.AllRegister();
-            Ogr.RegisterAll();
+            GdalBase.ConfigureAll();
         }
         public GdalInfo GetGdalInfo()
         {
