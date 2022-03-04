@@ -1,6 +1,10 @@
 # GDAL on .NET 6 Sample
 
-Sample of running GDAL 3.3.3 on .NET 6 Works on Linux and Windows (not Mac).
+Sample of running GDAL 3.3.3 on .NET 6.
+
+Works on Linux and Windows (not Mac).
+
+Blog: https://bertt.wordpress.com/2022/02/25/using-gdal-in-net-6/
 
 Sample contains 3 parts:
 
