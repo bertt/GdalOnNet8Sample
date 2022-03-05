@@ -16,6 +16,8 @@ Sample contains 3 parts:
 
 ## Running
 
+Prerequisite: Install .NET 6 https://dotnet.microsoft.com/en-us/download/dotnet/6.0
+
 ```
 $ git clone https://github.com/bertt/GdalOnNetCoreSample.git
 $ cd GdalOnNetCoreSample
