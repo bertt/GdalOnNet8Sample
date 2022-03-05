@@ -49,7 +49,7 @@ $ docker run -it gdal.console
 Reading gml using Ogr:
 
 ```
-Ogr.RegisterAll();
+GdalBase.ConfigureAll();
 var gmlDriver = Ogr.GetDriverByName("GML");
 var dsGml = gmlDriver.Open(@"LoD2_280_5657_1_NW.gml", 0);
 var buildingLayer = dsGml.GetLayerByName("building");
@@ -60,7 +60,7 @@ Console.WriteLine($"Number of features: {featuresGml}");
 Transform coordinate using Gdal:
 
 ```
-Gdal.AllRegister();
+ GdalBase.ConfigureAll();
 var src = new SpatialReference("");
 src.ImportFromEPSG(28992);
 Console.WriteLine("SOURCE IsGeographic:" + src.IsGeographic() + " IsProjected:" + src.IsProjected());
