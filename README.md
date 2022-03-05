@@ -91,7 +91,7 @@ NB: This program does not work on Mac.
 
 ###
 
-To perform projections there is a dependency to environment variabale 'PROJ_LIB'. It should point to a directory
+To perform projections there is a dependency to environment variable 'PROJ_LIB'. It should point to a directory
 containing proj.db SQLite file.
 
 Error message when this dependency is missing:
