@@ -12,6 +12,8 @@ Sample contains 3 parts:
 
 ## Running
 
+Prerequisite: Install .NET 6 https://dotnet.microsoft.com/en-us/download/dotnet/6.0
+
 ```
 $ git clone https://github.com/bertt/GdalOnNetCoreSample.git
 $ cd GdalOnNetCoreSample
@@ -48,7 +50,7 @@ $ docker run -it gdal.console
 Reading gml using Ogr:
 
 ```
-Ogr.RegisterAll();
+GdalBase.ConfigureAll();
 var gmlDriver = Ogr.GetDriverByName("GML");
 var dsGml = gmlDriver.Open(@"LoD2_280_5657_1_NW.gml", 0);
 var buildingLayer = dsGml.GetLayerByName("building");
@@ -59,7 +61,7 @@ Console.WriteLine($"Number of features: {featuresGml}");
 Transform coordinate using Gdal:
 
 ```
-Gdal.AllRegister();
+ GdalBase.ConfigureAll();
 var src = new SpatialReference("");
 src.ImportFromEPSG(28992);
 Console.WriteLine("SOURCE IsGeographic:" + src.IsGeographic() + " IsProjected:" + src.IsProjected());
@@ -90,7 +92,7 @@ NB: This program does not work on Mac.
 
 ###
 
-To perform projections there is a dependency to environment variabale 'PROJ_LIB'. It should point to a directory
+To perform projections there is a dependency to environment variable 'PROJ_LIB'. It should point to a directory
 containing proj.db SQLite file.
 
 Error message when this dependency is missing:
@@ -98,12 +100,3 @@ Error message when this dependency is missing:
 ```
 System.ApplicationException: 'PROJ: proj_get_authorities_from_database: Cannot find proj.db'
 ```
-
-## History
-
-22-12-12 using MaxRev.Gdal 3.6
-
-22-03-04: using MaxRev.Gdal 3.3
-
-19-11-13: using Gdal.Core 2.3 
-
