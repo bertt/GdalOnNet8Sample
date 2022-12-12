@@ -1,6 +1,6 @@
 # GDAL on .NET 6 Sample
 
-Sample of running GDAL 3.3.3 on .NET 6 Works on Linux and Windows (not Mac).
+Sample of running GDAL 3.6.0.100 on .NET 6 Works on Linux and Windows (not Mac).
 
 Sample contains 3 parts:
 
@@ -22,15 +22,18 @@ $ dotnet run
 Result:
 
 ```
-PAM_ENABLED=YES
+Buildinfo: PAM_ENABLED=YES
 OGR_ENABLED=YES
 GEOS_ENABLED=YES
-GEOS_VERSION=3.9.0-CAPI-1.14.1
+GEOS_VERSION=3.10.2-CAPI-1.16.0
+PROJ_BUILD_VERSION=7.2.1
+PROJ_RUNTIME_VERSION=7.2.1
+COMPILER=MSVC 193431935
 
-Releasename: 3.3.3
-Versionnumber: 3030300
-Number of drivers: 80
-Drivers: ESRIC,PCIDSK,PDS4,VICAR,JP2OpenJPEG,PDF,MBTiles,EEDA,OGCAPI,DB2ODBC,ESRI Shapefile,MapInfo File,UK .NTF,LVBAG,OGR_SDTS,S57,DGN,OGR_VRT,REC,Memory,CSV,NAS,GML,GPX,KML,GeoJSON,GeoJSONSeq,ESRIJSON,TopoJSON,Interlis 1,Interlis 2,OGR_GMT,GPKG,SQLite,ODBC,WAsP,PGeo,MSSQLSpatial,PostgreSQL,OpenFileGDB,DXF,CAD,FlatGeobuf,Geoconcept,GeoRSS,GPSTrackMaker,VFK,PGDUMP,OSM,GPSBabel,OGR_PDS,WFS,OAPIF,Geomedia,EDIGEO,SVG,CouchDB,Cloudant,Idrisi,ARCGEN,ODS,XLSX,Elasticsearch,Walk,Carto,AmigoCloud,SXF,Selafin,JML,PLSCENES,CSW,VDV,GMLAS,MVT,NGW,MapML,TIGER,AVCBin,AVCE00,HTTP
+Releasename: 3.6.0
+Versionnumber: 3060000
+Number of drivers: 78
+Drivers: ESRIC,FITS,PCIDSK,netCDF,PDS4,VICAR,JP2OpenJPEG,PDF,MBTiles,BAG,EEDA,OGCAPI,ESRI Shapefile,MapInfo File,UK .NTF,LVBAG,OGR_SDTS,S57,DGN,OGR_VRT,Memory,CSV,NAS,GML,GPX,LIBKML,KML,GeoJSON,GeoJSONSeq,ESRIJSON,TopoJSON,Interlis 1,Interlis 2,OGR_GMT,GPKG,SQLite,ODBC,WAsP,PGeo,MSSQLSpatial,PostgreSQL,MySQL,OpenFileGDB,DXF,CAD,FlatGeobuf,Geoconcept,GeoRSS,VFK,PGDUMP,OSM,GPSBabel,OGR_PDS,WFS,OAPIF,EDIGEO,SVG,Idrisi,XLS,ODS,XLSX,Elasticsearch,Carto,AmigoCloud,SXF,Selafin,JML,PLSCENES,CSW,VDV,GMLAS,MVT,NGW,MapML,TIGER,AVCBin,AVCE00,HTTP
 ```
 
 ## Docker
@@ -76,11 +79,11 @@ Console.WriteLine("To: x:" + p[0] + " y:" + p[1] + " z:" + p[2]);
 
 This sample uses the following packages from NuGet:
 
-- https://www.nuget.org/packages/MaxRev.Gdal.Core/ - version 3.3.3.110
+- https://www.nuget.org/packages/MaxRev.Gdal.Core/ - version 3.6.0.100
 
-- https://www.nuget.org/packages/MaxRev.Gdal.WindowsRuntime.Minimal/ - version 3.3.3.110
+- https://www.nuget.org/packages/MaxRev.Gdal.WindowsRuntime.Minimal/ - version 3.6.0.100
 
-- https://www.nuget.org/packages/MaxRev.Gdal.LinuxRuntime.Minimal/ - version 3.3.3.110
+- https://www.nuget.org/packages/MaxRev.Gdal.LinuxRuntime.Minimal/ - version 3.6.0.100
 
 
 NB: This program does not work on Mac.
@@ -95,3 +98,12 @@ Error message when this dependency is missing:
 ```
 System.ApplicationException: 'PROJ: proj_get_authorities_from_database: Cannot find proj.db'
 ```
+
+## History
+
+22-12-12 using MaxRev.Gdal 3.6
+
+22-03-04: using MaxRev.Gdal 3.3
+
+19-11-13: using Gdal.Core 2.3 
+
