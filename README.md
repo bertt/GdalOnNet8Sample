@@ -10,6 +10,8 @@ Sample contains 3 parts:
 
 - Transform coordinate from espg:28992 to epsg:4326
 
+Related blog see https://bertt.wordpress.com/2022/02/25/using-gdal-in-net-6/
+
 ## Running
 
 Prerequisite: Install .NET 6 https://dotnet.microsoft.com/en-us/download/dotnet/6.0
