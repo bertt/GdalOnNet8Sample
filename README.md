@@ -83,11 +83,11 @@ Console.WriteLine("To: x:" + p[0] + " y:" + p[1] + " z:" + p[2]);
 
 This sample uses the following packages from NuGet:
 
-- https://www.nuget.org/packages/MaxRev.Gdal.Core/ - version 3.6.0.100
+- https://www.nuget.org/packages/MaxRev.Gdal.Core/ - version 3.6.1.100
 
-- https://www.nuget.org/packages/MaxRev.Gdal.WindowsRuntime.Minimal/ - version 3.6.0.100
+- https://www.nuget.org/packages/MaxRev.Gdal.WindowsRuntime.Minimal/ - version 3.6.1.100
 
-- https://www.nuget.org/packages/MaxRev.Gdal.LinuxRuntime.Minimal/ - version 3.6.0.100
+- https://www.nuget.org/packages/MaxRev.Gdal.LinuxRuntime.Minimal/ - version 3.6.1.100
 
 
 NB: This program does not work on Mac.
