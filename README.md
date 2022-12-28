@@ -1,6 +1,6 @@
 # GDAL on .NET 6 Sample
 
-Sample of running GDAL 3.6.0.100 on .NET 6 Works on Linux and Windows (not Mac).
+Sample of running GDAL 3.6.1.100 on .NET 6 Works on Linux and Windows (not Mac).
 
 Sample contains 3 parts:
 
@@ -34,8 +34,8 @@ PROJ_BUILD_VERSION=7.2.1
 PROJ_RUNTIME_VERSION=7.2.1
 COMPILER=MSVC 193431935
 
-Releasename: 3.6.0
-Versionnumber: 3060000
+Releasename: 3.6.1
+Versionnumber: 3060100
 Number of drivers: 78
 Drivers: ESRIC,FITS,PCIDSK,netCDF,PDS4,VICAR,JP2OpenJPEG,PDF,MBTiles,BAG,EEDA,OGCAPI,ESRI Shapefile,MapInfo File,UK .NTF,LVBAG,OGR_SDTS,S57,DGN,OGR_VRT,Memory,CSV,NAS,GML,GPX,LIBKML,KML,GeoJSON,GeoJSONSeq,ESRIJSON,TopoJSON,Interlis 1,Interlis 2,OGR_GMT,GPKG,SQLite,ODBC,WAsP,PGeo,MSSQLSpatial,PostgreSQL,MySQL,OpenFileGDB,DXF,CAD,FlatGeobuf,Geoconcept,GeoRSS,VFK,PGDUMP,OSM,GPSBabel,OGR_PDS,WFS,OAPIF,EDIGEO,SVG,Idrisi,XLS,ODS,XLSX,Elasticsearch,Carto,AmigoCloud,SXF,Selafin,JML,PLSCENES,CSW,VDV,GMLAS,MVT,NGW,MapML,TIGER,AVCBin,AVCE00,HTTP
 ```

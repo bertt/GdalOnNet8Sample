@@ -8,10 +8,10 @@
   </PropertyGroup>
 
   <ItemGroup Condition="'$(IsWindows)'=='true'">
-		<PackageReference Include="MaxRev.Gdal.WindowsRuntime.Minimal" Version="3.6.0.100" />
+		<PackageReference Include="MaxRev.Gdal.WindowsRuntime.Minimal" Version="3.6.1.110" />
 	</ItemGroup>
   <ItemGroup Condition="'$(IsLinux)'=='true'">
-		<PackageReference Include="MaxRev.Gdal.LinuxRuntime.Minimal" Version="3.6.0.100" />
+		<PackageReference Include="MaxRev.Gdal.LinuxRuntime.Minimal" Version="3.6.1.100" />
 	</ItemGroup>
   <ItemGroup>
 	<PackageReference Include="Wkx" Version="0.5.1" />
