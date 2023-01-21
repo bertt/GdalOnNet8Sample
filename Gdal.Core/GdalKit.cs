@@ -19,12 +19,23 @@ namespace GdalNetCore.Core
             info.VersionNumber = Gdal.VersionInfo("VERSION_NUM");
             info.BuildInfo = Gdal.VersionInfo("BUILD_INFO");
 
-            var drivers = new List<string>();
+            var ogrDrivers = new List<string>();
             for (var i = 0; i < Ogr.GetDriverCount(); i++)
             {
-                drivers.Add(Ogr.GetDriver(i).GetName());
+                ogrDrivers.Add(Ogr.GetDriver(i).GetName());
             }
-            info.Drivers = drivers;
+            info.OgrDrivers = ogrDrivers;
+
+            var gdalDrivers = new List<string>();
+            for (var i = 0; i < Gdal.GetDriverCount(); i++)
+            {
+                var shortname = Gdal.GetDriver(i).ShortName;
+                if (!info.OgrDrivers.Contains(shortname)){
+                    gdalDrivers.Add(shortname);
+                }
+            }
+            info.GdalDrivers = gdalDrivers;
+
             return info;
         }
     }

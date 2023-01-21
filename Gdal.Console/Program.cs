@@ -1,6 +1,7 @@
 ﻿using GdalNetCore.Core;
 using OSGeo.OGR;
 using OSGeo.OSR;
+using OSGeo.GDAL;
 using System;
 using Wkx;
 
@@ -17,8 +18,12 @@ namespace GdalNetCore
             Console.WriteLine("Releasename: " + info.ReleaseName);
             Console.WriteLine("Versionnumber: " + info.VersionNumber);
 
-            Console.WriteLine("Number of drivers: " + info.Drivers.Count);
-            Console.WriteLine("Drivers: " + String.Join(',', info.Drivers));
+            Console.WriteLine("Number of OGR drivers: " + info.OgrDrivers.Count);
+            info.OgrDrivers.Sort();
+            info.GdalDrivers.Sort();
+            Console.WriteLine("OGR Drivers: " + String.Join(',', info.OgrDrivers));
+            Console.WriteLine("Number of GDAL drivers: " + info.GdalDrivers.Count);
+            Console.WriteLine("GDAL Drivers: " + String.Join(',', info.GdalDrivers));
 
             // sample reading (city)gml file
             var gmlDriver = Ogr.GetDriverByName("GML");
