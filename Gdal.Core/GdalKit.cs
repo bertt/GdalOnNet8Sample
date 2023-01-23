@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using MaxRev.Gdal.Core;
 using OSGeo.GDAL;
 using OSGeo.OGR;
@@ -26,11 +27,15 @@ namespace GdalNetCore.Core
             }
             info.OgrDrivers = ogrDrivers;
 
+            var gdaldrivers = Gdal.GetDriverCount();
+
+
             var gdalDrivers = new List<string>();
             for (var i = 0; i < Gdal.GetDriverCount(); i++)
             {
-                var shortname = Gdal.GetDriver(i).ShortName;
-                if (!info.OgrDrivers.Contains(shortname)){
+                if (Gdal.GetDriver(i).GetMetadataItem("DCAP_RASTER", null) == "YES")
+                {
+                    var shortname = Gdal.GetDriver(i).ShortName;
                     gdalDrivers.Add(shortname);
                 }
             }
