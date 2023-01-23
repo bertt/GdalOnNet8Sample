@@ -12,6 +12,12 @@ Sample contains 3 parts:
 
 Related blog see https://bertt.wordpress.com/2022/02/25/using-gdal-in-net-6/
 
+For using the GDAL api's see:
+
+Raster: https://gdal.org/api/csharp/csharp_raster.html
+
+Vector: https://gdal.org/api/csharp/csharp_vector.html
+
 ## Running
 
 Prerequisite: Install .NET 6 https://dotnet.microsoft.com/en-us/download/dotnet/6.0
