@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.Linq;
 using MaxRev.Gdal.Core;
 using OSGeo.GDAL;
 using OSGeo.OGR;
