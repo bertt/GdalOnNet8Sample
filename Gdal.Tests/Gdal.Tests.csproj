@@ -1,19 +1,23 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <OutputType>Exe</OutputType>
     <TargetFramework>net6.0</TargetFramework>
-
 	  <IsLinuxX64 Condition="$([MSBuild]::IsOsPlatform('Linux')) And $([System.Runtime.InteropServices.RuntimeInformation]::OSArchitecture) == X64">true</IsLinuxX64>
 	  <IsOsxArm64 Condition="$([MSBuild]::IsOsPlatform('OSX')) And $([System.Runtime.InteropServices.RuntimeInformation]::OSArchitecture) == Arm64">true</IsOsxArm64>
 	  <IsWindowsX64 Condition="$([MSBuild]::IsOsPlatform('Windows')) And $([System.Runtime.InteropServices.RuntimeInformation]::OSArchitecture) == X64">true</IsWindowsX64>
 	  <IsOsx Condition="$([MSBuild]::IsOsPlatform('OSX')) And $([System.Runtime.InteropServices.RuntimeInformation]::OSArchitecture) == Arm64">false</IsOsx>
+
+	  <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+
+    <IsPackable>false</IsPackable>
+    <IsTestProject>true</IsTestProject>
   </PropertyGroup>
 
-  <ItemGroup Condition="'$(IsWindowsX64)'=='true'">
+	<ItemGroup Condition="'$(IsWindowsX64)'=='true'">
 		<PackageReference Include="MaxRev.Gdal.WindowsRuntime.Minimal" Version="3.7.0.100" />
-   </ItemGroup>
-   <ItemGroup Condition="'$(IsLinuxX64)'=='true'">
+	</ItemGroup>
+	<ItemGroup Condition="'$(IsLinuxX64)'=='true'">
 		<PackageReference Include="MaxRev.Gdal.LinuxRuntime.Minimal" Version="3.7.0.100" />
 	</ItemGroup>
 	<ItemGroup Condition="'$(IsOsx)'=='true'">
@@ -22,20 +26,18 @@
 	<ItemGroup Condition="'$(IsOsxArm64)'=='true'">
 		<PackageReference Include="MaxRev.Gdal.MacosRuntime.Minimal.arm64" Version="3.7.0.217" />
 	</ItemGroup>
+
+
 	<ItemGroup>
-    <PackageReference Include="Wkx" Version="0.5.1" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Gdal.Core\Gdal.Core.csproj" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.5.0" />
+    <PackageReference Include="NUnit" Version="3.13.3" />
+    <PackageReference Include="NUnit3TestAdapter" Version="4.4.2" />
+    <PackageReference Include="NUnit.Analyzers" Version="3.6.1" />
+    <PackageReference Include="coverlet.collector" Version="3.2.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="gemeenten2016.geojson">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="LoD2_280_5657_1_NW.gml">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
+    <ProjectReference Include="..\Gdal.Core\Gdal.Core.csproj" />
   </ItemGroup>
 
 </Project>

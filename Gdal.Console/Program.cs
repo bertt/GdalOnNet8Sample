@@ -1,7 +1,6 @@
 ﻿using GdalNetCore.Core;
 using OSGeo.OGR;
 using OSGeo.OSR;
-using OSGeo.GDAL;
 using System;
 using Wkx;
 
