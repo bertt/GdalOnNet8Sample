@@ -1,6 +1,6 @@
 # GDAL on .NET 6 Sample
 
-Sample of running GDAL 3.7.0 on .NET 6 Works on osx-x64, osx-arm64, linux-x64 and win-x64.
+Sample of running GDAL 3.8.3 on .NET 6 Works on osx-x64, osx-arm64, linux-x64 and win-x64.
 
 Sample contains 3 parts:
 
@@ -32,12 +32,12 @@ $ dotnet run
 Result:
 
 ```
-Releasename: 3.7.0
-Versionnumber: 3070000
-Number of OGR drivers: 78
-OGR Drivers: AmigoCloud,AVCBin,AVCE00,BAG,CAD,Carto,CSV,CSW,DGN,DXF,EDIGEO,EEDA,Elasticsearch,ESRI Shapefile,ESRIJSON,FITS,FlatGeobuf,Geoconcept,GeoJSON,GeoJSONSeq,GeoRSS,GML,GMLAS,GPKG,GPSBabel,GPX,GTFS,HTTP,Idrisi,Interlis 1,Interlis 2,JML,JP2OpenJPEG,KML,LIBKML,LVBAG,MapInfo File,MapML,MBTiles,Memory,MSSQLSpatial,MVT,MySQL,NAS,netCDF,NGW,OAPIF,ODBC,ODS,OGCAPI,OGR_GMT,OGR_PDS,OGR_SDTS,OGR_VRT,OpenFileGDB,OSM,PCIDSK,PDF,PDS4,PGDUMP,PGeo,PLSCENES,PostgreSQL,S57,Selafin,SQLite,SVG,SXF,TIGER,TopoJSON,UK .NTF,VDV,VFK,VICAR,WAsP,WFS,XLS,XLSX
-Number of GDAL drivers: 146
-GDAL Drivers: AAIGrid,ACE2,ADRG,AIG,AirSAR,ARG,BAG,BIGGIF,BLX,BMP,BSB,BT,BYN,CAD,CALS,CEOS,COASP,COG,COSAR,CPG,CTable2,CTG,DAAS,DERIVED,DIMAP,DIPEx,DOQ1,DOQ2,DTED,ECRGTOC,EEDAI,EHdr,EIR,ELAS,ENVI,ERS,ESAT,ESRIC,FAST,FIT,FITS,GenBin,GFF,GIF,GPKG,GRASSASCIIGrid,GRIB,GS7BG,GSAG,GSBG,GSC,GTiff,GTX,GXF,HDF4,HDF4Image,HDF5,HDF5Image,HF2,HFA,HTTP,ILWIS,IRIS,ISCE,ISG,ISIS2,ISIS3,JAXAPALSAR,JDEM,JP2OpenJPEG,JPEG,KMLSUPEROVERLAY,KRO,L1B,LAN,LCP,Leveller,LOSLAS,MAP,MBTiles,MEM,MFF,MFF2,MRF,MSGN,NDF,netCDF,NGSGEOID,NGW,NITF,NOAA_B,NSIDCbin,NTv2,NWT_GRC,NWT_GRD,OGCAPI,OpenFileGDB,OZI,PAux,PCIDSK,PCRaster,PDF,PDS,PDS4,PLMOSAIC,PLSCENES,PNG,PNM,PostGISRaster,PRF,R,Rasterlite,RIK,RMF,ROI_PAC,RPFTOC,RRASTER,RS2,RST,SAFE,SAGA,SAR_CEOS,SDTS,SENTINEL2,SGI,SIGDEM,SNODAS,SRP,SRTMHGT,STACIT,STACTA,Terragen,TGA,TIL,TSX,USGSDEM,VICAR,VRT,WCS,WEBP,WMS,WMTS,XPM,XYZ,Zarr,ZMap
+Releasename: 3.8.3
+Versionnumber: 3080300
+Number of OGR drivers: 80
+OGR Drivers: AmigoCloud,AVCBin,AVCE00,BAG,CAD,Carto,CSV,CSW,DGN,DXF,EDIGEO,EEDA,Elasticsearch,ESRI Shapefile,ESRIJSON,FITS,FlatGeobuf,Geoconcept,GeoJSON,GeoJSONSeq,GeoRSS,GML,GMLAS,GPKG,GPSBabel,GPX,GTFS,HTTP,Idrisi,Interlis 1,Interlis 2,JML,JP2OpenJPEG,JSONFG,KML,LIBKML,LVBAG,MapInfo File,MapML,MBTiles,Memory,MSSQLSpatial,MVT,MySQL,NAS,netCDF,NGW,OAPIF,ODBC,ODS,OGCAPI,OGR_GMT,OGR_PDS,OGR_SDTS,OGR_VRT,OpenFileGDB,OSM,PCIDSK,PDF,PDS4,PGDUMP,PGeo,PLSCENES,PMTiles,PostgreSQL,S57,Selafin,SQLite,SVG,SXF,TIGER,TopoJSON,UK .NTF,VDV,VFK,VICAR,WAsP,WFS,XLS,XLSX
+Number of GDAL drivers: 147
+GDAL Drivers: AAIGrid,ACE2,ADRG,AIG,AirSAR,ARG,BAG,BIGGIF,BLX,BMP,BSB,BT,BYN,CAD,CALS,CEOS,COASP,COG,COSAR,CPG,CTable2,CTG,DAAS,DERIVED,DIMAP,DIPEx,DOQ1,DOQ2,DTED,ECRGTOC,EEDAI,EHdr,EIR,ELAS,ENVI,ERS,ESAT,ESRIC,FAST,FIT,FITS,GenBin,GFF,GIF,GPKG,GRASSASCIIGrid,GRIB,GS7BG,GSAG,GSBG,GSC,GTiff,GTX,GXF,HDF4,HDF4Image,HDF5,HDF5Image,HF2,HFA,HTTP,ILWIS,IRIS,ISCE,ISG,ISIS2,ISIS3,JAXAPALSAR,JDEM,JP2OpenJPEG,JPEG,KMLSUPEROVERLAY,KRO,L1B,LAN,LCP,Leveller,LOSLAS,MAP,MBTiles,MEM,MFF,MFF2,MRF,MSGN,NDF,netCDF,NGSGEOID,NGW,NITF,NOAA_B,NSIDCbin,NTv2,NWT_GRC,NWT_GRD,OGCAPI,OpenFileGDB,OZI,PAux,PCIDSK,PCRaster,PDF,PDS,PDS4,PLMOSAIC,PLSCENES,PNG,PNM,PostGISRaster,PRF,R,Rasterlite,RIK,RMF,ROI_PAC,RPFTOC,RRASTER,RS2,RST,S102,SAFE,SAGA,SAR_CEOS,SDTS,SENTINEL2,SGI,SIGDEM,SNODAS,SRP,SRTMHGT,STACIT,STACTA,Terragen,TGA,TIL,TSX,USGSDEM,VICAR,VRT,WCS,WEBP,WMS,WMTS,XPM,XYZ,Zarr,ZMap
 ```
 
 ## Docker
@@ -83,15 +83,15 @@ Console.WriteLine("To: x:" + p[0] + " y:" + p[1] + " z:" + p[2]);
 
 This sample uses the following packages from NuGet:
 
-- https://www.nuget.org/packages/MaxRev.Gdal.Core/ - version 3.7.0.217
+- https://www.nuget.org/packages/MaxRev.Gdal.Core/ - version 3.8.3.286
 
-- https://www.nuget.org/packages/MaxRev.Gdal.WindowsRuntime.Minimal/ - version 3.7.0.100
+- https://www.nuget.org/packages/MaxRev.Gdal.WindowsRuntime.Minimal/ - version 3.8.3.259
 
-- https://www.nuget.org/packages/MaxRev.Gdal.LinuxRuntime.Minimal/ - version 3.7.0.100
+- https://www.nuget.org/packages/MaxRev.Gdal.LinuxRuntime.Minimal/ - version 3.8.3.286
 
-- https://www.nuget.org/packages/MaxRev.Gdal.MacosRuntime.Minimal.x64/ - version 3.7.0.217
+- https://www.nuget.org/packages/MaxRev.Gdal.MacosRuntime.Minimal.x64/ - version 3.8.3.391
 
-- https://www.nuget.org/packages/MaxRev.Gdal.MacosRuntime.Minimal.arm64/ - version 3.7.0.217
+- https://www.nuget.org/packages/MaxRev.Gdal.MacosRuntime.Minimal.arm64/ - version 3.8.3.391
 
 ## Known issues
 
@@ -105,5 +105,7 @@ System.ApplicationException: 'PROJ: proj_get_authorities_from_database: Cannot f
 ```
 
 ## History
+
+2024-04-30: From 3.7 to 3.8
 
 2023-07-21: From GDAL 3.6 to 3.7, added macOS support

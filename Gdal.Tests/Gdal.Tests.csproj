@@ -15,7 +15,7 @@
   </PropertyGroup>
 
 	<ItemGroup Condition="'$(IsWindowsX64)'=='true'">
-		<PackageReference Include="MaxRev.Gdal.WindowsRuntime.Minimal" Version="3.7.0.100" />
+		<PackageReference Include="MaxRev.Gdal.WindowsRuntime.Minimal" Version="3.8.3.259" />
 	</ItemGroup>
 	<ItemGroup Condition="'$(IsLinuxX64)'=='true'">
 		<PackageReference Include="MaxRev.Gdal.LinuxRuntime.Minimal" Version="3.7.0.100" />
