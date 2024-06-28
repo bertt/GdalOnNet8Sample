@@ -83,15 +83,15 @@ Console.WriteLine("To: x:" + p[0] + " y:" + p[1] + " z:" + p[2]);
 
 This sample uses the following packages from NuGet:
 
-- https://www.nuget.org/packages/MaxRev.Gdal.Core/ - version 3.8.3.286
+- https://www.nuget.org/packages/MaxRev.Gdal.Core/ - version 3.9.0.218
 
-- https://www.nuget.org/packages/MaxRev.Gdal.WindowsRuntime.Minimal/ - version 3.8.3.259
+- https://www.nuget.org/packages/MaxRev.Gdal.WindowsRuntime.Minimal/ - version 3.9.0.218
 
-- https://www.nuget.org/packages/MaxRev.Gdal.LinuxRuntime.Minimal/ - version 3.8.3.286
+- https://www.nuget.org/packages/MaxRev.Gdal.LinuxRuntime.Minimal/ - version 3.9.0.218
 
-- https://www.nuget.org/packages/MaxRev.Gdal.MacosRuntime.Minimal.x64/ - version 3.8.3.391
+- https://www.nuget.org/packages/MaxRev.Gdal.MacosRuntime.Minimal.x64/ - version 3.9.0.218
 
-- https://www.nuget.org/packages/MaxRev.Gdal.MacosRuntime.Minimal.arm64/ - version 3.8.3.391
+- https://www.nuget.org/packages/MaxRev.Gdal.MacosRuntime.Minimal.arm64/ - version 3.9.0.218
 
 ## Known issues
 
@@ -105,6 +105,8 @@ System.ApplicationException: 'PROJ: proj_get_authorities_from_database: Cannot f
 ```
 
 ## History
+
+2024-06-28: From 3.8 to 3.9
 
 2024-04-30: From 3.7 to 3.8
 
