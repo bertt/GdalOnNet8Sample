@@ -1,11 +1,11 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
   </PropertyGroup>
 
 	<ItemGroup>
-		<PackageReference Include="MaxRev.Gdal.Core" Version="3.8.3.286" />
+		<PackageReference Include="MaxRev.Gdal.Core" Version="3.9.0.218" />
 		<PackageReference Include="Wkx" Version="0.5.1" />
 	</ItemGroup>
 </Project>
