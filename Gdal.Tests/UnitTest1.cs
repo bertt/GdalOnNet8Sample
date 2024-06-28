@@ -13,7 +13,7 @@ public class Tests
         Console.WriteLine("OS: " + Environment.OSVersion.Platform);
         Console.WriteLine("Gdal drivers: " + info.GdalDrivers.Count);
         info.GdalDrivers.Sort();
-        Console.WriteLine("GDAL Drivers: " + String.Join(',', info.GdalDrivers);
+        Console.WriteLine("GDAL Drivers: " + String.Join(',', info.GdalDrivers));
 
         // if windows, count is 150 else 151
         if (Environment.OSVersion.Platform == PlatformID.Win32NT)
