@@ -9,8 +9,8 @@ public class Tests
     {
         var kit = new GdalKit();
         var info = kit.GetGdalInfo();
-        Assert.IsTrue(info.ReleaseName=="3.8.3");
-        Assert.IsTrue(info.GdalDrivers.Count == 147);
-        Assert.IsTrue(info.OgrDrivers.Count == 80);
+        Assert.That(info.ReleaseName=="3.9.0");
+        Assert.That(info.GdalDrivers.Count == 150);
+        Assert.That(info.OgrDrivers.Count == 81);
     }
 }
