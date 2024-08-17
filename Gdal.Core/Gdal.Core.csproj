@@ -5,7 +5,7 @@
   </PropertyGroup>
 
 	<ItemGroup>
-		<PackageReference Include="MaxRev.Gdal.Core" Version="3.9.0.218" />
+		<PackageReference Include="MaxRev.Gdal.Core" Version="3.9.1.247" />
 		<PackageReference Include="Wkx" Version="0.5.1" />
 	</ItemGroup>
 </Project>

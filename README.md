@@ -1,6 +1,6 @@
 # GDAL on .NET 8 Sample
 
-Sample of running GDAL 3.9.0 on .NET 8 Works on osx-x64, osx-arm64, linux-x64 and win-x64.
+Sample of running GDAL 3.9.1 on .NET 8 Works on osx-x64, osx-arm64, linux-x64 and win-x64.
 
 Sample contains 3 parts:
 
@@ -32,8 +32,8 @@ $ dotnet run
 Result:
 
 ```
-Releasename: 3.9.0
-Versionnumber: 3090000
+Releasename: 3.9.1
+Versionnumber: 3090100
 Number of OGR drivers: 81
 OGR Drivers: AmigoCloud,AVCBin,AVCE00,BAG,CAD,Carto,CSV,CSW,DGN,DXF,EDIGEO,EEDA,Elasticsearch,ESRI Shapefile,ESRIJSON,FITS,FlatGeobuf,Geoconcept,GeoJSON,GeoJSONSeq,GeoRSS,GML,GMLAS,GPKG,GPSBabel,GPX,GTFS,HTTP,Idrisi,Interlis 1,Interlis 2,JML,JP2OpenJPEG,JSONFG,KML,LIBKML,LVBAG,MapInfo File,MapML,MBTiles,Memory,MiraMonVector,MSSQLSpatial,MVT,MySQL,NAS,netCDF,NGW,OAPIF,ODBC,ODS,OGCAPI,OGR_GMT,OGR_PDS,OGR_SDTS,OGR_VRT,OpenFileGDB,OSM,PCIDSK,PDF,PDS4,PGDUMP,PGeo,PLSCENES,PMTiles,PostgreSQL,S57,Selafin,SQLite,SVG,SXF,TIGER,TopoJSON,UK .NTF,VDV,VFK,VICAR,WAsP,WFS,XLS,XLSX
 Number of GDAL drivers: 150

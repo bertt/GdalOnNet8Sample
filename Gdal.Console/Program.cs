@@ -51,6 +51,8 @@ namespace GdalNetCore
             // sample transform coordinate from epsg:28992 to epsg:4326
             var src = new SpatialReference("");
             src.ImportFromEPSG(28992);
+            string linearUnits = src.GetLinearUnitsName();
+            string angularUnits = src.GetAngularUnitsName();
             Console.WriteLine("SOURCE IsGeographic:" + src.IsGeographic() + " IsProjected:" + src.IsProjected());
             var dst = new SpatialReference("");
             dst.ImportFromEPSG(4326);
