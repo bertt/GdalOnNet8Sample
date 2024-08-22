@@ -10,17 +10,17 @@
 	  <IsOsx Condition="$([MSBuild]::IsOsPlatform('OSX')) And $([System.Runtime.InteropServices.RuntimeInformation]::OSArchitecture) == Arm64">false</IsOsx>
   </PropertyGroup>
 
-  <ItemGroup Condition="'$(IsWindowsX64)'=='true'">
+	<ItemGroup Condition="'$(IsWindowsX64)'=='true'">
 		<PackageReference Include="MaxRev.Gdal.WindowsRuntime.Minimal" Version="3.9.1.247" />
-   </ItemGroup>
-   <ItemGroup Condition="'$(IsLinuxX64)'=='true'">
-		<PackageReference Include="MaxRev.Gdal.LinuxRuntime.Minimal" Version="3.9.0.218" />
+	</ItemGroup>
+	<ItemGroup Condition="'$(IsLinuxX64)'=='true'">
+		<PackageReference Include="MaxRev.Gdal.LinuxRuntime.Minimal" Version="3.9.1.247" />
 	</ItemGroup>
 	<ItemGroup Condition="'$(IsOsx)'=='true'">
-		<PackageReference Include="MaxRev.Gdal.MacosRuntime.Minimal.x64" Version="3.9.0.218" />
+		<PackageReference Include="MaxRev.Gdal.MacosRuntime.Minimal.x64" Version="3.9.1.247" />
 	</ItemGroup>
 	<ItemGroup Condition="'$(IsOsxArm64)'=='true'">
-		<PackageReference Include="MaxRev.Gdal.MacosRuntime.Minimal.arm64" Version="3.9.0.218" />
+		<PackageReference Include="MaxRev.Gdal.MacosRuntime.Minimal.arm64" Version="3.9.1.247" />
 	</ItemGroup>
 	<ItemGroup>
     <PackageReference Include="System.Drawing.Common" Version="8.0.8" />
