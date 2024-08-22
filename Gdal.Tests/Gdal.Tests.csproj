@@ -18,19 +18,19 @@
 		<PackageReference Include="MaxRev.Gdal.WindowsRuntime.Minimal" Version="3.9.1.247" />
 	</ItemGroup>
 	<ItemGroup Condition="'$(IsLinuxX64)'=='true'">
-		<PackageReference Include="MaxRev.Gdal.LinuxRuntime.Minimal" Version="3.9.0.218" />
+		<PackageReference Include="MaxRev.Gdal.LinuxRuntime.Minimal" Version="3.9.1.247" />
 	</ItemGroup>
 	<ItemGroup Condition="'$(IsOsx)'=='true'">
-		<PackageReference Include="MaxRev.Gdal.MacosRuntime.Minimal.x64" Version="3.9.0.218" />
+		<PackageReference Include="MaxRev.Gdal.MacosRuntime.Minimal.x64" Version="3.9.1.247" />
 	</ItemGroup>
 	<ItemGroup Condition="'$(IsOsxArm64)'=='true'">
-		<PackageReference Include="MaxRev.Gdal.MacosRuntime.Minimal.arm64" Version="3.9.0.218" />
+		<PackageReference Include="MaxRev.Gdal.MacosRuntime.Minimal.arm64" Version="3.9.1.247" />
 	</ItemGroup>
 
 
 	<ItemGroup>
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.11.0" />
-    <PackageReference Include="NUnit" Version="4.1.0" />
+    <PackageReference Include="NUnit" Version="4.2.0" />
 
     <PackageReference Include="NUnit3TestAdapter" Version="4.6.0" />
     <PackageReference Include="NUnit.Analyzers" Version="4.3.0">
