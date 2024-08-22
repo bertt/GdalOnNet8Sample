@@ -9,7 +9,7 @@ public class Tests
     {
         var kit = new GdalKit();
         var info = kit.GetGdalInfo();
-        Assert.That(info.ReleaseName == "3.9.0");
+        Assert.That(info.ReleaseName == "3.9.1");
         Console.WriteLine("OS: " + Environment.OSVersion.Platform);
         Console.WriteLine("Gdal drivers: " + info.GdalDrivers.Count);
         info.GdalDrivers.Sort();
